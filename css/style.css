@@ -1,1 +1,568 @@
+a {
+  text-decoration: none;
+}
 
+ul {
+  list-style: none;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: #fafafa;
+  color: #111;
+}
+
+button {
+  cursor: pointer;
+}
+
+.logo {
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.11;
+  letter-spacing: 0.03em;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.logo-style {
+  color: #111;
+  font-style: italic;
+}
+
+.item-nav-link {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: #111;
+}
+
+.item-nav-link:hover,
+.item-nav-link:focus {
+  color: #fd9250;
+}
+
+.nav-list {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+  margin-left: auto;
+}
+.hero {
+  background-color: #1e1823;
+  padding: 381px 40px 40px;
+  position: relative;
+}
+
+.hero-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.hero-title {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 1.21;
+  letter-spacing: -0.03em;
+  color: #ffffff;
+  max-width: 484px;
+  margin-bottom: 32px;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 14px;
+  margin-bottom: 32px;
+}
+
+.hero-button {
+  padding: 14px 40px;
+  background: #fd9222;
+  border-radius: 100px;
+  border: none;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.21;
+  color: #ffffff;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.hero-button:hover,
+.hero-button:focus {
+  background-color: #fcf1e0;
+  color: #fd9222;
+}
+
+.hero-link-made {
+  padding: 14px 40px;
+  border-radius: 100px;
+  border: 1px solid #ffffff;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.21;
+  color: #ffffff;
+  text-decoration: none;
+  transition: border-color 0.3s, color 0.3s;
+}
+
+.hero-link-made:hover,
+.hero-link-made:focus {
+  border-color: #fd9222;
+  color: #fd9222;
+}
+
+.hero-link-scroll {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.03em;
+  color: #ffffff;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.hero-link-scroll::after {
+  content: "";
+  width: 38px;
+  height: 38px;
+  background-image: url("../images/scroll.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  padding: 24px 32px;
+}
+
+.nav-header {
+  margin-left: auto;
+}
+
+.header-nav-list {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+}
+
+.features {
+  padding: 72px 0;
+  background-color: #1e1823;
+  margin-top: 72px;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
+}
+
+.features-list {
+  display: flex;
+  gap: 18px;
+  justify-content: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 32px;
+}
+
+.features-item {
+  width: calc((100% - 36px) / 3);
+  padding: 20px;
+}
+
+.features-title {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.22;
+  color: #ffffff;
+  margin-bottom: 18px;
+}
+
+.features-description {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  line-height: 1.21;
+  letter-spacing: -0.02em;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.our-products {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 50px;
+  width: 100%;
+}
+
+.our-products-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 28px;
+  width: 486px;
+  height: 156px;
+}
+.our-products-title {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.16667;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  text-align: center;
+  color: #111;
+}
+.our-products-title-span {
+  color: #fd9250;
+}
+.our-products-description {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.28571;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: #111;
+}
+.our-products-title-item {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.28571;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: #111;
+  text-align: center;
+  margin-top: 8px;
+}
+.our-products-list {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: row;
+  gap: 19px;
+  width: 100%;
+}
+
+.our-products-container-list {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: row;
+  gap: 19px;
+  width: 100%;
+  height: 270px;
+}
+.our-products-item {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: row;
+  gap: 19px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  flex: 1; /* додано для рівномірного розподілу простору */
+  max-width: calc((100% - 32px) / 4);
+}
+
+.ingredients {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.28571;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: #fff;
+}
+.ingredients-title {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.16667;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  text-align: center;
+  color: #111;
+}
+.ingredients-title-span {
+  color: #fd9250;
+}
+.ingredients-image-container {
+  width: 600px;
+  height: 400px;
+}
+.ingredients-description {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.33333;
+  color: #111;
+}
+.ingredients-list {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  padding-left: 30px;
+}
+.ingredients-item {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.28571;
+  letter-spacing: -0.02em;
+  color: #111;
+  padding-right: 20px;
+  text-transform: none;
+  list-style: disc;
+}
+.ingredients-container {
+  border-radius: 15px;
+
+  width: 516px;
+  height: 400px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: row;
+  gap: 20px;
+  background-color: #fff;
+}
+
+.ingredients-section-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.ingredients-description-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.ingredients-container {
+  border-radius: 15px;
+  width: 516px;
+  height: 400px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: row;
+  gap: 20px;
+  background-color: #fff;
+}
+.ingredients-image-container {
+  width: 600px;
+  height: 400px;
+}
+.chocolate-stats {
+  padding: 120px 0;
+  text-align: center;
+}
+
+.chocolate-stats-title {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  color: #111111;
+  margin-bottom: 50px;
+}
+
+.chocolate-stats-title-span {
+  color: #fd9222;
+}
+
+.chocolate-stats-list {
+  display: flex;
+  gap: 28px;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.chocolate-stats-item {
+  padding: 56px 24px 42px;
+  width: 360px;
+  height: 200px;
+  background-color: #ffffff;
+  border: 1px solid rgba(17, 17, 17, 0.1);
+  box-shadow: 0px 9.04932px 26.5717px rgba(215, 228, 249, 0.25);
+  border-radius: 15px;
+  text-align: center;
+  position: relative;
+}
+
+.chocolate-stats-item img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  position: absolute;
+  top: -40px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.chocolate-stats-title-item {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.33;
+  color: #111111;
+  margin-top: 18px;
+  margin-bottom: 24px;
+}
+
+.chocolate-stats-description {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  line-height: 1.29;
+  text-align: center;
+  letter-spacing: -0.02em;
+  color: rgba(17, 17, 17, 0.7);
+}
+
+.chocolate-stats-button {
+  padding: 14px 40px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.22;
+  color: #111111;
+  background: transparent;
+  border: 1px solid #fd9222;
+  border-radius: 100px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.chocolate-stats-button:hover,
+.chocolate-stats-button:focus {
+  background-color: #fd9222;
+  color: #ffffff;
+}
+.footer {
+  background-color: #1e1823;
+  padding: 50px 32px;
+}
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.footer-left {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.footer-title {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 1.21;
+  letter-spacing: -0.02em;
+  color: #ffffff;
+  width: 300px;
+}
+.footer-title-span {
+  color: #fd9222;
+}
+.footer-right {
+  text-align: right;
+}
+.footer-title-contact {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.29;
+  color: #ffffff;
+  margin-bottom: 14px;
+}
+.footer-list {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.footer-list a {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+.footer-list a:hover,
+.footer-list a:focus {
+  color: #fd9222;
+}
+.ingredients-content-wrapper {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+  flex-direction: row-reverse;
+}
+
+.ingredients-description-container {
+  flex: 1;
+}
+
+.ingredients-description {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.28571;
+  letter-spacing: -0.02em;
+  color: #111;
+}
+
+.ingredients-image-container {
+  flex: 1;
+}
+
+.ingredients-content-wrapper .ingredients-description {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.33333;
+  color: #111;
+  margin-bottom: 28px;
+}
+
+.ingredients-content-wrapper .ingredients-item {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.28571;
+  letter-spacing: -0.02em;
+  color: #111;
+}
